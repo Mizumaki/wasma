@@ -6,6 +6,11 @@ edition = "2021"
 [lib]
 crate-type = ["cdylib"]
 
+[profile.release]
+opt-level = "z"
+codegen-units = 1
+lto = true
+
 [dependencies]
 mdka = "1.2.0"
 pulldown-cmark = "0.9.3"
