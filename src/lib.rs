@@ -3,7 +3,7 @@ use wasm_bindgen::prelude::*;
 
 #[wasm_bindgen]
 pub fn serialize(html_input: &str) -> String {
-  unimplemented!()
+  mdka::from_html(html_input)
 }
 
 #[wasm_bindgen]
