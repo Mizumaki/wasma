@@ -1,12 +1,16 @@
 {
-  "name": "wasmark",
-  "version": "0.0.1",
+  "name": "wasma",
+  "type": "module",
+  "version": "0.0.3",
   "description": "Bidirectional Markdown Parser implemented in WebAssembly",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "main": "pkg/wasma.js",
+  "files": [
+    "pkg"
+  ],
+  "author": "Ryota Mizumaki <statham.programming@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mizumaki/wasma.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "license": "MIT"
 }

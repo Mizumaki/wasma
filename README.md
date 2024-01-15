@@ -1,8 +1,10 @@
-# wasmark
+# wasma
 
 Bidirectional Markdown Parser implemented in WebAssembly
 
 Supporting Markdown to HTML, and HTML to Markdown.
+
+(In fact, I wanted to name `wasmark`, but already taken in npm so `wasma`...)
 
 ## How to develop
 
@@ -13,15 +15,7 @@ So, just fix the code and run the `wasm-pack` command to generate JS and WASM.
 wasm-pack build --target bundler
 ```
 
-Release build
-
-```sh
-wasm-pack build --target bundler --release
-
-wasm-opt -Oz -o ./pkg/wasmark_bg_optimized.wasm ./pkg/wasmark_bg.wasm
-rm ./pkg/wasmark_bg.wasm
-mv ./pkg/wasmark_bg_optimized.wasm ./pkg/wasmark_bg.wasm # Use Optimized version
-```
+Release build => See [./scripts/release-build.sh](./scripts/release-build.sh)
 
 ### Pre-Requisite
 
